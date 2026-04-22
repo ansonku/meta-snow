@@ -5,6 +5,6 @@ SRC_URI += " \
     file://ast2700a1-evb.dts \
 "
 
-do_patch:append() {
+do_configure:append () {
     cp ${WORKDIR}/sources/ast2700a1-evb.dts ${S}/arch/arm64/boot/dts/aspeed/
 }
