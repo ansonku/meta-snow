@@ -1298,3 +1298,19 @@
 	};
 };
 #endif
+
+/ {
+	/* MCTP I2C simulator: virtual endpoint for mctpd discovery testing */
+	mctp-i2c-sim {
+		compatible = "mctp-i2c-sim";
+		mctp-controller;
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		/* BMC slave address on the virtual bus */
+		mctp@1d {
+			compatible = "mctp-i2c-controller";
+			reg = <0x1d>;
+		};
+	};
+};
