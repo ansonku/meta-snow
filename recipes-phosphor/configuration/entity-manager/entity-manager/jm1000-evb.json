@@ -288,7 +288,7 @@
         {
             "Address": "0x30",
             "Bus": 16,
-            "Name": "MCTP_I2C_Simulator",
+            "Name": "JM1000_MCTP_I2C_Simulator",
             "Type": "MCTPI2CTarget"
         }
     ],
