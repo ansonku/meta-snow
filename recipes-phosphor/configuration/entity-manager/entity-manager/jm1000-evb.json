@@ -284,6 +284,12 @@
             "Class": "Aspeed2600_Hwmon",
             "Name": "Chassis Intrusion Sensor",
             "Type": "ChassisIntrusionSensor"
+        },
+        {
+            "Address": "0x30",
+            "Bus": 16,
+            "Name": "MCTP_I2C_Simulator",
+            "Type": "MCTPI2CTarget"
         }
     ],
     "xyz.openbmc_project.Inventory.Decorator.FruDevice": {

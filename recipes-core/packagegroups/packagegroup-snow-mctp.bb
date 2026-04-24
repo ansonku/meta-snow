@@ -8,6 +8,7 @@ inherit packagegroup
 RDEPENDS:${PN} = " \
     socat \
     mctp \
+    mctp-setup \
     python3-modules \
     pldm \
     util-linux-ldattach \

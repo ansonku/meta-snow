@@ -1,0 +1,12 @@
+[Unit]
+Description=MCTP I2C interface setup
+Before=mctpd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/mctp link set mctpi2c16 up
+ExecStart=-/usr/bin/mctp address add 8 dev mctpi2c16
+
+[Install]
+WantedBy=mctp.target
